@@ -17,7 +17,7 @@ print(os.path.dirname(os.getcwd())+':', os.listdir(os.path.dirname(os.getcwd()))
 print(os.getcwd()+':', os.listdir(os.getcwd()));
 
 # import all stock prices 
-df = pd.read_csv("../data/ADA_USDT_kline.csv", index_col = 0)
+df = pd.read_csv("/root/coin/data/ADA_USDT_kline.csv", index_col = 0)
 df.info()
 df.head()
 
