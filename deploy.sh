@@ -1,3 +1,4 @@
+chmod 777 /root/coin/source.sh
 python3.10 -m venv --system-site-packages ./venv
 source ./venv/bin/activate
 pip3 install --upgrade pip

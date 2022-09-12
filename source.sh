@@ -1,1 +1,1 @@
-source /root/venv/bin/activate
+echo "source /root/venv/bin/activate"
