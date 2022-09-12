@@ -59,7 +59,7 @@ def normalize_data(df):
 
 # function to create train, validation, test data given stock data and sequence length
 def load_data(stock, seq_len):
-    data_raw = stock.as_matrix() # convert to numpy array
+    data_raw = stock.values # convert to numpy array
     data = []
     
     # create all possible sequences of length seq_len
@@ -92,7 +92,7 @@ print('df_stock.columns.values = ', cols)
 
 # normalize stock
 df_stock_norm = df_stock.copy()
-#df_stock_norm = normalize_data(df_stock_norm)
+df_stock_norm = normalize_data(df_stock_norm)
 
 # create train, test data
 seq_len = 10 # choose sequence length

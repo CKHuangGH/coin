@@ -1,1 +1,1 @@
-source ./venv/bin/activate
+source /root/venv/bin/activate
